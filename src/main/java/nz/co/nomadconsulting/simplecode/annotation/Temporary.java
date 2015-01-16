@@ -29,4 +29,6 @@ import java.lang.annotation.RetentionPolicy;
 @Retention(RetentionPolicy.SOURCE)
 public @interface Temporary {
     String value();
+    
+    String reason() default "";
 }
